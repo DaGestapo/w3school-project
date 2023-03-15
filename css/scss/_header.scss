@@ -1,0 +1,40 @@
+.header {
+
+    &__img {
+        display: none;
+    }
+
+    &__nav {
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            li {
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.7rem;
+                aspect-ratio: 4/1;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    background: get-color("primary");
+                    color: #000;
+                }
+            }
+
+            a {
+                color: get-color("font"); 
+                font-size: get-font("header");
+            }
+        }
+    }
+
+    i {
+        display: none;
+    }
+}

@@ -1,0 +1,49 @@
+@import "config", "variables", "mixin";
+@import "header", "block1", "block2";
+
+body {
+    background: map-get($color, "background");
+    color: get-color("primary");
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+h1 {
+    @include h1-param;
+}
+
+p[discription] {
+    color: map-get($color, "primary-gray");
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+
+    li::marker {
+        content: none;
+    }
+}
+
+button {
+    background: map-get($color, "primary" ); 
+    border: none;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: map-get($color, "primary-gray" );
+    }
+}
