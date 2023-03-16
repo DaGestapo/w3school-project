@@ -1,5 +1,5 @@
 @import "config", "variables", "mixin";
-@import "header", "block1", "block2";
+@import "header", "block1", "block2", "block3";
 
 body {
     background: map-get($color, "background");
@@ -19,6 +19,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     @include h1-param;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 p[discription] {

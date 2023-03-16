@@ -28,6 +28,9 @@
   background: #f1f1f1;
   color: #000;
 }
+.header__nav ul li:hover a {
+  color: #000;
+}
 .header__nav ul a {
   color: #757575;
   font-size: 14px;
@@ -150,10 +153,10 @@
   font-size: 22px;
   border: none;
 }
-.block2__price ul li:nth-child(5) {
+.block2__price ul li:nth-child(6) {
   border: none;
 }
-.block2__price ul li:nth-child(6) {
+.block2__price ul li:nth-child(7) {
   background-color: #dbdbdb;
   border: none;
   padding: 1rem;
@@ -187,6 +190,57 @@
 .block2__price ul:hover::before {
   content: none;
 }
+.block2__revies {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.block2__revies_item {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+.block2__revies_item p {
+  text-align: left;
+  color: #616161;
+  font-size: 15px;
+}
+.block2__revies_item p span {
+  font-size: 18px;
+}
+.block2__avatar {
+  width: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  grid-row: 1/span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block2__avatar img {
+  width: 100%;
+}
+
+.block3 h2 {
+  width: 60%;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #616161;
+}
+.block3__photographyes {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+.block3__photographyes_item {
+  position: relative;
+  width: 100%;
+}
+.block3__photographyes_item img {
+  width: 100%;
+}
 
 body {
   background: #000;
@@ -208,6 +262,14 @@ h1 {
   font-size: 64px;
   font-weight: 400;
   line-height: 6rem;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 p[discription] {
