@@ -1,0 +1,64 @@
+@include desctop {
+    .header {
+        position: fixed;
+        width: 8rem;
+        height: 100%;
+        background: rgb(41, 41, 41);
+    
+        &__img {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 9rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            &::before {
+                position: absolute;
+                display: inline-block;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                opacity: 0.3;
+            }
+        }
+    
+        &__nav {
+    
+            ul {
+                flex-direction: column;
+                justify-content: none;
+    
+                li {                
+                    width: 100%;
+    
+                }
+
+                a {
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap:1rem;
+                    
+                }
+    
+              
+            }
+        }
+    
+        i {
+            display: block;
+            font-size: 36px;
+        }
+    }
+
+    main {
+        padding: 2rem 2rem 0 10rem;
+        gap: 6rem;
+    }
+}

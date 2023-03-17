@@ -1,5 +1,6 @@
 @import "config", "variables", "mixin";
-@import "header", "block1", "block2", "block3";
+@import "header", "block1", "block2", "block3", "block4", "footer";
+
 
 body {
     background: map-get($color, "background");
@@ -10,7 +11,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 2rem 1.5rem;
-    gap: 4rem;
+    gap: 6rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,3 +56,5 @@ button {
         background-color: map-get($color, "primary-gray" );
     }
 }
+
+@import "responsive";

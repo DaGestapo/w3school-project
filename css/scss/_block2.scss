@@ -1,7 +1,7 @@
 .block2 {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 
     &__about {
         display: flex;
@@ -202,6 +202,7 @@
 
     &__avatar {
         width: 5rem;
+        aspect-ratio: 1 / 1;
         border-radius: 50%;
         overflow: hidden;
         grid-row: 1 / span 2;
