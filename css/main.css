@@ -417,10 +417,10 @@ button:hover {
     width: 100%;
   }
   .block1 h2 {
-    width: 30%;
+    width: 40%;
   }
   .block2 h2 {
-    width: 30%;
+    width: 40%;
   }
   .block2__list2 {
     flex-direction: row;
@@ -438,13 +438,13 @@ button:hover {
     grid-column: 1/span 2;
   }
   .block3 h2 {
-    width: 30%;
+    width: 40%;
   }
   .block3__photographyes {
     grid-template-columns: 1fr 1fr;
   }
   .block4 h2 {
-    width: 30%;
+    width: 40%;
   }
   .block4 button {
     max-width: 15rem;
