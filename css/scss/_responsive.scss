@@ -58,7 +58,7 @@
     }
 
     .block1__img {
-        
+        width: 100%;
         img {
             width: 100%;
         }
@@ -75,9 +75,13 @@
         h2 {
             width: 40%;
         }
+        p {
+            font-size: 18px;
+        }
 
         &__list2 {
             flex-direction: row;
+            justify-content: space-evenly;
         }
 
         button {
@@ -109,12 +113,17 @@
     }
 
     .block4 {
+        
         h2 {
             width: 40%;
         }
 
         button {
             max-width: 15rem;
+        }
+
+        input {
+            max-width: 50vw;
         }
     }
 

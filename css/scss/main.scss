@@ -2,6 +2,14 @@
 @import "header", "block1", "block2", "block3", "block4", "footer";
 
 
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    } to {
+        background-position: -200% center;
+    }
+}
+
 body {
     background: map-get($color, "background");
     color: get-color("primary");
