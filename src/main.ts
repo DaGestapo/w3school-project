@@ -45,7 +45,4 @@ function goToElement(event: Event){
             window.scrollTo( 0, articles[2].offsetTop - 70 );
             break;
     }
-
-    
-
 }
