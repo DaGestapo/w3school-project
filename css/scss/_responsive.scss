@@ -57,8 +57,71 @@
         }
     }
 
+    .block1__img {
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    .block1 {
+        h2 {
+            width: 30%;
+        }
+    }
+
+    .block2 {
+
+        h2 {
+            width: 30%;
+        }
+
+        &__list2 {
+            flex-direction: row;
+        }
+
+        button {
+            max-width: 15rem;
+        }
+
+        &__price {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 1rem;
+
+            h3 {
+                grid-column: 1 / span 2;
+            }
+    }
+
+    }
+
+    .block3 {
+        
+        h2 {
+            width: 30%;
+        }
+    
+        &__photographyes {
+            grid-template-columns: 1fr 1fr;       
+        }
+    }
+
+    .block4 {
+        h2 {
+            width: 30%;
+        }
+
+        button {
+            max-width: 15rem;
+        }
+    }
+
     main {
         padding: 2rem 2rem 0 10rem;
         gap: 6rem;
     }
+
+    
 }

@@ -7,6 +7,12 @@
         border-bottom: 1px solid map-get($color, "primary-gray" );
     }
 
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
     &__photographyes {
         position: relative;
         display: grid;
